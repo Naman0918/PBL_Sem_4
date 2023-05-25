@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Binding</title>
+    <link rel="stylesheet" href="css\styles3.css">
+</head>
+<body>
+    <ul class="nav_list">
+        <li class="nav"><a class="nav_link" href="index.html">Home</a></li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <h1 class="object_title">DYNAMIC BINDING</h1>
+    <br>
+    
+    <b><h2 class="objects_classes2"></h2></b>
+    <p class="objects_classes30">Dynamic binding, also known as late binding or runtime polymorphism, is a feature in object-oriented programming (OOP) languages like Java that allows the selection of the appropriate method implementation at runtime based on the actual type of the object rather than the reference type. </p>
+    <p class="objects_classes30">In Java, dynamic binding is achieved through method overriding and the use of the virtual keyword (although it is implicit in Java). When a method is called on an object, the JVM determines the actual type of the object and resolves the appropriate method implementation to execute. </p>
+    
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <table>
+        <tr>
+            <td>
+               <p class="object_classes"></p>
+               <img class="objects_img9" src="images\img45.gif" alt="">
+               <br>
+               <br>
+               <br>
+               <br>
+               
+            </td>
+            <td>
+                <b><h2 class="objects_classes2"></h2></b>
+                
+                <b><p class="objects_classes1">Here's how dynamic binding works in Java:</p></b>
+                <p class="objects_classes1">In Java, dynamic binding is achieved through method overriding and the use of the virtual keyword (although it is implicit in Java). When a method is called on an object, the JVM determines the actual type of the object and resolves the appropriate method implementation to execute.</p>
+                <p class="objects_classes1">1.Inheritance and Method Overriding:</p>
+                <p class="objects_classes1">Dynamic binding relies on the inheritance mechanism and method overriding. When a subclass overrides a method inherited from its superclass, it provides its own implementation of the method with the same signature (name, return type, and parameters). The subclass method overrides the superclass method.</p>
+                <p class="objects_classes1">2.Reference Type and Actual Type: </p>
+                <p class="objects_classes1">When an object is created, it can be referred to by a variable of its own type or a variable of its superclass type. The reference type determines which methods can be accessed and called directly. However, at runtime, the JVM looks at the actual type of the object to determine the appropriate method implementation to execute.</p>
+                <p class="objects_classes1">3.Dynamic Binding: </p>
+                <p class="objects_classes1">When a method is called using a reference variable, the JVM determines the actual type of the object being referred to (the object's runtime type) and resolves the method invocation to the appropriate implementation in that class. This allows different subclasses to have their own specialized implementations of the same method.</p>
+                
+            </td>
+        </tr>
+    </table>
+    <center>
+        <hr class="dotted">
+    </center>
+    <br>
+    <br>
+    <h3 class="encap_example" >EXAMPLE:</h3>
+    <center>
+        <img src="images\img75.png" alt="encap_example" width="40%">
+        <br>
+        <br>
+        <img src="images\img76.png" alt="encap_example" width="40%">
+    </center>
+    <h3 class="encap_example" >OUTPUT:</h3>
+    <center>
+        <img src="images\img77.png" alt="encap_example" width="40%">
+    </center>
+    <h3 class="encap_example" >EXPLAINATION:</h3>
+    <p class="objects_classes1">Here the output differs. But why? Let’s break down the code and understand it thoroughly.</p>
+        <p class="objects_classes1">Methods are not static in this code.</p>
+        <p class="objects_classes1">During compilation, the compiler has no idea as to which print has to be called since the compiler goes only by referencing variable not by the type of object, and therefore the binding would be delayed to runtime and therefore the corresponding version of the print will be called based on type on an object.</p>
+        
+        <br>
+        <br>
+
+        
+
+        <h3 class="encap_example" >For a more in-depth guide on Dynamic Binding:</h3>
+        <center>
+        <iframe width="420" height="315"
+        src="https://www.youtube.com/embed/3nO2CmEv8NU">
+        </iframe>
+    </center>
+    <br>
+    <br>
+    <h3 class="encap_example" >For a more in-depth guide on Binding:</h3>
+    <a class="encap_example" href="https://www.geeksforgeeks.org/static-vs-dynamic-binding-in-java/">Click here for more resources! </a>
+    <br>
+    <br>
+
+    <center>
+        <hr class="dotted">
+    </center>
+
+</body>
+</html>

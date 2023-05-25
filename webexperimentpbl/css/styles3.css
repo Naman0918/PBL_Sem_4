@@ -1,0 +1,389 @@
+body{
+    background-color:white;
+    color:navy;
+   font-family: 'Paytone One', sans-serif;
+}
+
+/*.img1{
+    position:absolute;
+    right: 5px;
+    top: 100px;
+    border-radius: 20%;
+}*/
+
+.circular{
+
+    border-radius: 40%;
+
+}
+
+
+h1{
+    color: navy;
+   font-family: 'Paytone One', sans-serif;
+   
+    margin-bottom:300px ;
+    margin-left:50px;
+    font-size:50px;
+}
+
+
+
+
+
+.title{
+   font-family: 'Paytone One', sans-serif;
+    
+    font-size:20px;
+    
+}
+
+a:hover{
+    color:tomato;
+}
+
+
+
+
+hr{
+    border-style: none ;
+    border-top-style:dotted;
+    border-color:lightblue;
+    border-width: 10px;
+    width:100%;
+    margin-left:400px;
+
+}
+
+.hr1{
+    border-style: none ;
+    border-top-style:dotted;
+    border-color:lightblue;
+    border-width: 10px;
+    width:25%;
+    margin-left:500px;
+}
+
+.hr2{
+    border-style: none ;
+    border-top-style:dotted;
+    border-color:lightblue;
+    border-width: 10px;
+    width:25%;
+    margin-left:530px;
+}
+
+
+
+
+.oop_home{
+    margin-left:1%;
+    width: 100%;
+    margin-top: 10%;
+}
+
+
+.oop_title{
+    font-size: 320%;
+    margin-left:10%;
+    color:navy;
+    line-height: 40% ;
+    
+}
+
+.oop_info{
+    color:slategray;
+    margin-left: 10% ;
+    line-height: 60%; 
+    width: 100%;
+    
+}
+
+.oop_arrow{
+    margin-left: 40%;
+    width: 10%;
+
+}
+
+.oop_arrow_side{
+    margin-left: 35%;
+}
+
+.nav_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:navy;
+    position: fixed;
+    width: 100%;
+  }
+  
+.nav {
+    float: left;
+  }
+  
+.nav .nav_link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+.nav_link:hover{
+    color:tomato;
+  }
+
+.downward_arrow{
+    margin-left: 90%;
+  }
+
+  .dotted{
+    border-style: none ;
+    border-top-style:dotted;
+    border-color:lightblue;
+    width:50%;
+    float: left;
+  }
+
+  
+
+  .oop_card1{
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 70%;
+   border-radius: 5%;
+    
+  }
+
+  .oop_card1:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .card_container1 {
+    padding: 2px 16px;
+    
+  }
+
+  .card1_img{
+    border-radius: 5% 5% 0 0;
+  }
+
+  .oop_card2{
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 70%;
+    border-radius: 5%;
+    
+    
+  }
+
+  .oop_card2:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .card_container2 {
+    padding: 2px 16px;
+  }
+
+  .oop_card3{
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 70%;
+    border-radius: 5%;
+    
+   
+  }
+
+  .oop_card3:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .card_container3 {
+    padding: 2px 16px;
+  }
+
+  .dot {
+    height: 2%;
+    width: 2%;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+
+ .oop_topics{
+    color: navy;
+    
+ }
+
+ .object_title{
+    font-size: 200%;
+    margin-left: 0.5%;
+ }
+
+ .objects_img1{
+    line-height: 5px;
+    width: 90%;
+    border-radius: 100%;
+    margin-left: 10%;
+ }
+
+ .object_classes{
+    margin-top: -300px;
+ }
+
+ .objects_classes1{
+    margin-top: 2%;
+    max-width: 70%;
+    min-width: 50%;
+    margin-left: 10%;
+ }
+
+ .objects_classes2{
+    margin-top:-20% ;
+    margin-left: 10%;
+}
+
+.tag_cloud1 {
+    display: inline-block;
+    color:white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    background-color: navy;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+
+  .classes_syntax{
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 100%;
+    
+  }
+
+  .tag_cloud2{
+    display: inline-block;
+    color:white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    background-color: navy;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+  .tag_cloud10{
+    display: inline-block;
+    color:white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    background-color: navy;
+    margin-top: 10%;
+    margin-left: -100%;
+  }
+.classes_image{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.tag_cloud3{
+    display: inline-block;
+    color:white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    background-color: navy;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.classes_example{
+    margin-left: 20%;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.objects_img2{
+    width: 120%;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.objects_img3{
+    line-height: 5px;
+    width: 100%;
+    border-radius: 100%;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.objects_img4{
+    line-height: 5px;
+    width: 120%;
+  
+    margin-left: 10%;
+    margin-top: 0.5%;
+}
+.objects_img5{
+    line-height: 5px;
+    width: 120%;
+    
+    margin-left: 10%;
+    margin-top: 35%;
+}
+.objects_img6{
+    line-height: 5px;
+    width: 150%;
+ 
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+.objects_img7{
+    line-height: 5px;
+    width: 100%;
+    
+    margin-left: 10%;
+    margin-top: 35%;
+}
+.objects_img8{
+    line-height: 5px;
+    width: 80%;
+ 
+    margin-left: 15%;
+    margin-top: 0%;
+}
+
+.objects_img9{
+    line-height: 5px;
+    width: 100%;
+ 
+    margin-left: 10%;
+    margin-top: 20%;
+}
+
+.objects_img10{
+    line-height: 5px;
+    width: 100%;
+ 
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+
+.objects_classes30{
+    margin-top: 2%;
+    max-width: 70%;
+    min-width: 50%;
+    margin-left: 0.5%;
+    
+ }
+
+ .encap_example{
+    margin-left: 0.5%;
+ }
+
+ .inheritance_example{
+    margin-left: 15%;
+ }
