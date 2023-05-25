@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosfet</title>
+    <link rel="stylesheet" href="Mosfet.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="../index.html">Home</a>
+        <h1 id="title">MOSFET</h1>
+    </div>
+    <div class="container">
+        <div class="component">
+            <h2>Construction:</h2>
+            <p>A Metal-Oxide-Semiconductor Field-Effect Transistor (MOSFET) is a three-terminal device composed of a
+                semiconductor material, typically silicon, with a thin layer of insulating material (oxide) on top and a
+                metal
+                gate electrode on the insulating layer. The MOSFET has three regions: the source, the drain, and the
+                channel.
+                The channel acts as a conducting path between the source and the drain.</p>
+            <br>
+            
+            <img src="../image/mosfet_construction.jpg" alt="">
+        </div>
+        <div class="component">
+            <h2>Types:</h2>
+            <p>There are two main types of MOSFETs based on the conductivity type of the channel:</p>
+
+            <p><strong>1. N-Channel MOSFET (NMOS):</strong> In an NMOS transistor, the channel is composed of n-type
+                semiconductor material. The
+                majority carriers (electrons) flow through the channel when a voltage is applied between the source and
+                drain
+                terminals.</p>
+
+            <p><strong>2. P-Channel MOSFET (PMOS):</strong> In a PMOS transistor, the channel is composed of p-type
+                semiconductor material. The
+                majority carriers (holes) flow through the channel when a voltage is applied between the source and
+                drain
+                terminals.</p>
+        </div>
+        <div class="component">
+
+            <h2>Operation:</h2>
+            <p>The operation of a MOSFET involves controlling the current flow through the channel by applying a voltage
+                at the
+                gate terminal. The MOSFET operates in three different regions:</p>
+
+            <p><strong>1. Cut-off Region:</strong> When the gate-to-source voltage (VGS) is below the threshold voltage
+                (Vth), the MOSFET is in
+                the cut-off region. In this region, the transistor is off, and the channel is depleted of charge
+                carriers,
+                resulting in negligible current flow between the source and drain.</p>
+
+            <p><strong>2. Triode (Linear) Region:</strong> When VGS is above Vth, but the voltage between the drain and
+                source (VDS) is low, the
+                MOSFET operates in the triode region. In this region, the channel is conducting, and the current flow
+                between
+                the source and drain is proportional to the VGS and VDS voltages.</p>
+
+            <p><strong>3. Saturation Region:</strong> When VGS is above Vth, and VDS is sufficiently high, the MOSFET
+                enters the saturation
+                region. In this region, the channel is fully open, and the current between the source and drain is
+                determined by
+                the device characteristics rather than the VDS voltage.</p>
+        </div>
+        <div class="component">
+            <h2>V-I Characteristics:</h2>
+            <img src="../image/IV charactristics.png" alt="">
+            <p>The voltage-current (V-I) characteristics of a MOSFET show how the drain current (ID) varies with the
+                drain-to-source voltage (VDS) for different gate-to-source voltages (VGS). The V-I characteristics
+                typically
+                consist of three regions:</p>
+            <p>1. Cut-off Region: The MOSFET is off, and there is negligible drain current regardless of the VDS.</p>
+            <p>2. Triode (Linear) Region: The drain current increases linearly with VDS until it reaches a maximum
+                value. The
+                device operates as a voltage-controlled resistor in this region.</p>
+            <p> 3. Saturation Region: The drain current remains relatively constant, independent of VDS. The MOSFET
+                operates as
+                a voltage-controlled current source, and its output is not affected by VDS variations.
+            </p>
+        </div>
+
+        <div class="component">
+            <h2> MOSFET as Switch:</h2>
+            <p>A MOSFET can be used as a switch by operating it in either the cut-off or saturation region. When the
+                MOSFET is
+                fully off (cut-off region), it blocks the current flow between the source and drain. When the MOSFET is
+                fully on
+                (saturation region), it allows a significant current to flow through the channel. By controlling the
+                gate
+                voltage, the MOSFET can be switched between these two states, making it an efficient switch for various
+                electronic applications.</p>
+        </div>
+        <div class="component">
+            <h2> MOSFET as Amplifier:</h2>
+            <p>A MOSFET can also be used as an amplifier, particularly in the saturation region. By applying an input
+                voltage
+                signal to the gate terminal, the MOSFET amplifies the signal at the output. The input signal causes
+                variations
+            </p>
+        </div>
+        <div class="videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Bfvyj88Hs_o"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPAMP</title>
+    <link rel="stylesheet" href="opamp.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="../index.html">Home</a>
+        <h1 id="title">Operational Amplifier</h1>
+    </div>
+    <div class="container">
+        <div class="component">
+            <h2>Operation Amplifier</h2>
+            <p>An operational amplifier (op-amp) is a versatile electronic component that is widely used in various
+                applications, such as amplification, filtering, and signal conditioning. It is a high-gain,
+                direct-coupled
+                amplifier with differential inputs and a single-ended output. Here is a breakdown of its block diagram
+                and some
+                common configurations.</p>
+            <br>
+            <div class="videos">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kiiA6WTCQn0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <img src="../image/OPAMP (1).png" alt="" width="30%">
+        </div>
+        <div class="component">
+            <h2>Block Diagram:</h2>
+            <img src="../image/opamp-block-diagram.jpg" alt="">
+            <br>
+            <p>An op-amp typically consists of the following key blocks:</p>
+
+            <p><strong>Differential Amplifier:</strong> This block takes in the voltage difference between the two input
+                terminals (inverting
+                and non-inverting) and amplifies it.</p>
+
+            <p><strong>Voltage Amplifier:</strong> The amplified voltage from the differential amplifier is further
+                amplified by a high-gain
+                voltage amplifier stage.</p>
+
+            <p><strong>Output Stage: </strong>This block provides a buffered output voltage that is capable of driving
+                external loads.</p>
+
+            <p><strong>Power Supplies:</strong> Op-amps require power supplies to operate. The positive and negative
+                supply voltages provide the
+                necessary biasing and operating voltage levels for the internal circuitry.</p>
+        </div>
+
+        <div class="component">
+            <h2>Ideal Operational Amplifier:</h2>
+            <p>
+                The ideal op-amp is a theoretical model that assumes certain characteristics to simplify circuit analysis. The
+        ideal op-amp possesses the following ideal properties:
+            </p>
+            <p>
+                <strong>Infinite Open-Loop Gain (A):</strong> The voltage gain of the op-amp is assumed to be infinite, meaning it can amplify
+        the input signal with perfect accuracy.
+            </p>
+            <p>
+               <strong> Infinite Input Impedance:</strong> The input impedance of an ideal op-amp is considered to be infinite, ensuring that no
+        current flows into the input terminals.
+            </p>
+            <p>
+                <strong>Zero Output Impedance:</strong> The output impedance of an ideal op-amp is considered to be zero, meaning it can drive
+        any load without affecting its output voltage.
+            </p>
+            <p>
+                <strong>Infinite Bandwidth:</strong> The ideal op-amp has an infinite bandwidth, allowing it to amplify signals of any frequency
+        without distortion.
+            </p>
+        </div>
+
+        <div class="component">
+
+            <h2>Inverting Amplifier:</h2>
+            <p>The inverting amplifier is a commonly used configuration of an op-amp. It produces an output that is the
+                inverted and amplified version of the input voltage applied to the inverting terminal. The non-inverting
+                terminal is typically connected to a reference voltage (e.g., ground). The gain of the inverting
+                amplifier is
+                determined by the ratio of the input and feedback resistors.</p>
+                <img src="../image/opamp1.gif" alt="Inverting Amplifier" width="40%">
+        </div>
+
+        <div class="component">
+
+            <h2>Non-Inverting Amplifier:</h2>
+            <p>
+                The non-inverting amplifier is another popular configuration. In this setup, the input signal is applied
+                to the
+                non-inverting terminal, while the inverting terminal is connected to the output via a feedback resistor.
+                The
+                output voltage is in phase with the input voltage, and the gain is determined by the ratio of the
+                feedback and
+                input resistors.
+
+            </p>
+            <img src="../image/opamp2.gif" alt="Non Inverting Amplifier" width="40%">
+        </div>
+
+        <div class="component">
+            <p>Both the inverting and non-inverting amplifiers utilize negative feedback, which improves stability,
+                linearity,
+                and reduces distortion in the amplifier circuit.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
