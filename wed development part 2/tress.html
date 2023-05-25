@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trees</title>
+</head>
+<style>
+    html{
+        background:white;
+    
+    }
+    h1{
+        text-align: center;
+        padding: 30px;
+        padding-top:3 0px;
+        color:white;
+        background-color:black ;
+        font-size:30px;
+    
+    
+    }
+    h2{
+        text-decoration: underline;
+        font-size: 30px;
+        text-align: center;
+    }
+    p{
+        font-size: 20px;
+        padding-left:20px;
+    }
+    img{
+        padding-left:390px;
+        padding-top:30px;
+    }
+    .reveal{
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 3s ease;
+    }
+    .reveal.active{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+    h3{
+        text-decoration: underline;
+        padding:20px;
+    }
+    li{
+        font-size: 20px;
+        padding: 20px;
+    }
+</style>
+<body>
+    <h1>Trees</h1>
+    <h2>Introduction</h2>
+    <p>A tree is a non-linear abstract data type with a hierarchy-based structure. It consists of nodes (where the data is stored) that are connected via links. The tree data structure stems from a single node called a root node and has subtrees connected to the root.</p>
+    <img src="tress123.gif"width="50%" height="300px">
+   <h2> Important Terms</h2>
+<p>Following are the important terms with respect to tree.</p>
+
+<p>Path − Path refers to the sequence of nodes along the edges of a tree.</p>
+
+<p>Root − The node at the top of the tree is called root. There is only one root per tree and one path from the root node to any node.</p>
+
+<p>Parent − Any node except the root node has one edge upward to a node called parent.</p>
+
+<p>Child − The node below a given node connected by its edge downward is called its child node.</p>
+
+<p>Leaf − The node which does not have any child node is called the leaf node.</p>
+
+<p>Subtree − Subtree represents the descendants of a node.</p>
+
+<p>Visiting − Visiting refers to checking the value of a node when control is on the node.</p>
+
+<p>Traversing − Traversing means passing through nodes in a specific order.</p>
+
+<p>Levels − Level of a node represents the generation of a node. If the root node is at level 0, then its next child node is at level 1, its grandchild is at level 2, and so on.</p>
+
+<p>Keys − Key represents a value of a node based on which a search operation is to be carried out for a node.</p>
+<h2>Types of Trees</h2>
+
+   <p> There are three types of trees −</p>
+    <ul>
+   <li>General Trees</li>
+    
+   <li>Binary Trees</li>
+    
+    <li>Binary Search Trees</li></ul>
+<h2>General Trees</h2>
+   <p> General trees are unordered tree data structures where the root node has minimum 0 or maximum ‘n’ subtrees.</p>
+    <p> The General trees have no constraint placed on their hierarchy. The root node thus acts like the superset of all the other subtrees.</p>
+    <section>
+    <div class="reveal active">
+    <img src="General_Trees.jpg"width="50%"height="300px">
+</div></section>
+   <h2>Binary Trees</h2>
+  
+    <p>Binary Trees are general trees in which the root node can only hold up to maximum 2 subtrees: left subtree and right subtree. Based on the number of children, binary trees are divided into three types.</p>
+    <h3>Full Binary Tree</h3>
+
+      <p>  A full binary tree is a binary tree type where every node has either 0 or 2 child nodes.</p>
+        
+       <h3> Complete Binary Tree</h3>
+        
+      <p>  A complete binary tree is a binary tree type where all the leaf nodes must be on the same level. However, root and internal nodes in a complete binary tree can either have 0, 1 or 2 child nodes.</p>
+        
+      <h3>  Perfect Binary Tree</h3>
+        
+      <p>  A perfect binary tree is a binary tree type where all the leaf nodes are on the same level and every node except leaf nodes have 2 children.</p>
+    <h2>PREORDER</h2>
+    <section>
+    <div class="reveal active">
+    <img src="pre.gif"width="50%"height="300px">
+    </div>
+    </section>
+    <h2>postorder</h2>
+    <section>
+    <div class="reveal active">
+    <img src="post.gif"width="50%"height="300px">
+    </div>
+    </section>
+    <h2>inorder</h2>
+    <section>
+    <div class="reveal active">
+    <img src="inorder.gif"width="50%"height="300px">
+    </div>
+</section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+    
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i = 0; i < reveals.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+    
+        }
+    </script>
+
+</body>
+</html>

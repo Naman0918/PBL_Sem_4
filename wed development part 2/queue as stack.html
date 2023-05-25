@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue using Stacks</title>
+</head>
+<style>
+html{
+    background:white;
+
+}
+h1{
+    text-align: center;
+    padding: 30px;
+    padding-top:3 0px;
+    color:white;
+    background-color:black ;
+    font-size:30px;
+
+
+}
+img{
+    padding-left: 450px;
+    flex-direction: column;
+}
+p{
+    font-size: 20px;
+    padding-left:20px;
+}
+h2{
+    padding-left: 20px;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 3s ease;
+}
+.reveal.active{
+    transform: translatey(0px);
+    opacity: 1;
+}
+img{
+    
+   padding-left: 420px;
+   width: 50%;
+   padding-bottom: 20px;
+}
+h2{
+    text-decoration: underline;
+    font-size: 30px;
+    text-align: center;
+}
+.info{
+    background-color: #fff;
+    color: black;
+}
+h3{
+    text-decoration: underline;
+}
+
+</style>
+<body>
+    <h1>Queue using Stacks</h1>
+    <div class="info">
+    <p>The problem is opposite of this post. We are given a stack data structure with push and pop operations, the task is to implement a queue using instances of stack data structure and operations on them.</p>
+    <img src="queue.gif"width="400px"height="200px">
+    <p>A queue can be implemented using two stacks. Let queue to be implemented be q and stacks used to implement q be stack1 and stack2. q can be implemented in two ways: </p>
+    <p>Method 1 (By making enQueue operation costly): This method makes sure that oldest entered element is always at the top of stack 1, so that deQueue operation just pops from stack1. To put the element at top of stack1, stack2 is used.</p>
+    <h2>EnQueue(q, x): </h2>
+
+<p>While stack1 is not empty, push everything from stack1 to stack2.
+Push x to stack1 (assuming size of stacks is unlimited).
+Push everything back to stack1.
+Here time complexity will be O(n)</p>
+
+<h2>deQueue(q): </h2>
+<p>
+If stack1 is empty then error
+Pop an item from stack1 and return it
+Here time complexity will be O(1)</p>
+<img src="stack1.gif"width="500px"height="250px"></div>
+<h2>code of the stack as a queue:</h2>
+<section>
+<div class="reveal active">
+<img src="codestack3.png">
+</div></section>
+<section>
+<div class="reveal active">
+<img src="codestack2.png">
+</div></section>
+<section>
+<div class="reveal active">
+<img src="codestaxk.png">
+</div></section>
+<h2>Complexity Analysis: </h2>
+
+   <h3>Time Complexity: </h3>
+   <p>Push operation: O(N). 
+    In the worst case we have empty whole of stack 1 into stack 2.
+    Pop operation: O(1). 
+    Same as pop operation in stack.
+    Auxiliary Space: O(N). 
+    Use of stack for storing values.</p>
+   <h3> Method 2 (By making deQueue operation costly):</h3>
+   <p> In this method, in en-queue operation, the new element is entered at the top of stack1. In de-queue operation, if stack2 is empty then all the elements are moved 
+    to stack2 and finally top of stack2 is returned. </p>
+    <h3>enQueue(q,  x)</h3>
+       <p> 1) Push x to stack1 (assuming size of stacks is unlimited).
+      Here time complexity will be O(1)</p>
+      
+      <h3>deQueue(q)</h3>
+       <p> 1) If both stacks are empty then error.</p>
+        <p>2) If stack2 is empty
+             While stack1 is not empty, push everything from stack1 to stack2.</p>
+      <p>  3) Pop the element from stack2 and return it.
+      Here time complexity will be O(n)</p>
+      <section>
+        <div class="reveal active">
+        <img src="queue.png">
+        </div></section>
+        <section>
+        <div class="reveal active">
+        <img src="queue1.png">
+        </div></section>
+        <h2>Complexity Analysis: </h2>
+
+          <h3> Time Complexity:</h3> 
+          <p>  Push operation: O(1). 
+            Same as pop operation in stack.
+            Pop operation: O(N) in general and O(1) amortized time complexity.
+            In the worst case we have to empty the whole of stack 1 into stack 2 so its O(N). Amortized time is the way to express the time complexity when an algorithm has the very bad time complexity only once in a while besides the time complexity that happens most of time. So its O(1) amortized time complexity, since we have to empty whole of stack 1 only when stack 2 is empty, rest of the times the pop operation takes O(1) time.
+            Auxiliary Space: O(N). 
+            Use of stack for storing values.</p>
+            <p>Queue can also be implemented using one user stack and one Function Call Stack. Below is modified Method 2 where recursion (or Function Call Stack) is used to implement queue using only one user defined stack. 
+
+               <h3> enQueue(x)</h3>
+                 <p> 1) Push x to stack1.</p>
+                
+               <h3> deQueue:</h3>
+                <p> 1) If stack1 is empty then error.</p>
+                 <p> 2) If stack1 has only one element then return it.</p>
+                 <p> 3) Recursively pop everything from the stack1, store the popped item 
+                    in a variable res,  push the res back to stack1 and return res</p>
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal() {
+        var reveals = document.querySelectorAll('.reveal');
+        for (var i = 0; i < reveals.length; i++) {
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+            if (revealtop < windowheight - revealpoint) {
+                reveals[i].classList.add('active');
+            }
+            else {
+                reveals[i].classList.remove('active');
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

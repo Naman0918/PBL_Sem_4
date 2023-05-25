@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijkstra Algorithm</title>
+</head>
+<style>
+    html{
+        background:white;
+    
+    }
+    h1{
+        text-align: center;
+        padding: 30px;
+        padding-top:3 0px;
+        color:white;
+        background-color:black ;
+        font-size:30px;
+    
+    
+    }
+    p{
+        font-size: 20px;
+
+    }
+    h2{
+        font-size: 30px;
+        text-decoration: underline;
+    }
+    ul li{
+        font-size: 20px;
+        
+
+    }
+    ol li{
+        font-size:20px
+    }
+</style>
+<body>
+    <h1>Dijkstra Algorithm</h1>
+    <h2>About The Algorithm::</h2>
+    <p>Dijkstra algorithm is a single-source shortest path algorithm. Here, single-source means that only one source is given, and we have to find the shortest path from the source to all the nodes.</p>
+    <img src="s.gif"width="750">
+    <h2>Djikstra's algorithm pseudocode</h2>
+    <ul><li>We need to maintain the path distance of every vertex. We can store that in an array of size v, where v is the number of vertices.</li>
+
+        <li>We also want to be able to get the shortest path, not only know the length of the shortest path.</li> 
+        <li>For this, we map each vertex to the vertex that last updated its path length.</li>
+        <li>Once the algorithm is over, we can backtrack from the destination vertex to the source vertex to find the path.</li>
+
+        <li>A minimum priority queue can be used to efficiently receive the vertex with least path distance.</li> 
+     </ul>
+        <h2>Algorithm for dijikstra</h2>
+        <ol>
+            <li>First define max=the size of the array that you want you graph to be then we have to define the infinty to 9999</li>
+            <li>then we have to declare graph[max][max],cost[max][max],visited[max],parent[max],distance[max],mindistance,nextnode,count </li>
+            <li>we first have to traverse through the graph 2d array by using to for loops if the the graph[i][j]=0 then we will put cost[i][j]=infinity</li>
+            <li>else cost[i][j]=graph[i][j]</li>
+            <li>then we will  travese through the distance distance[i]=cost[startnode][i],parent[i]=startnode,visited[i]=0</li>
+            <li>distance[startnode]=0,visited[startnode]=1</li>
+            <li>count=1,mindistance=infinity,if its not visited and the mindistance is greater than the distance[i]the distance[i]=mindistance,nextnode=i</li>
+            <li>then the next node would be visited the we will cheak wheather mindistance+cost[nextnode][i]is less than distance[i]if yes the we will assign distance to the mindistance plus cost[nextnode][i]</li>
+            <li>then we will assign the parent as nextnode</li>
+            <li>finally we will print the cost and distance</li>
+        </ol>
+    <h2>code for the dijikstra</h2>
+    <img src="code.png"width=50%>
+    <img src="code 1.png"width=50%>
+            
+    
+    
+    
+</body>
+</html>

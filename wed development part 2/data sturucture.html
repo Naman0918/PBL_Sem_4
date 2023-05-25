@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>data sturucture</title>
+</head>
+<style>
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    background-color: black;
+    
+}
+
+h1{
+   
+   
+    padding: 20px;
+    padding-top:30px;
+    color:white;
+    background-color:#000;
+    text-align: center;
+
+}
+.unit1{
+ text-align: center;
+ padding: 20px;
+display: inline-block;
+}
+.unit2{
+    
+    padding: 20px;
+    text-align: center;
+   display:inline-block;
+
+
+}
+.unit3 {
+    padding: 20px;
+ 
+    text-align: center;
+ 
+    
+    display: inline-block;
+
+
+}
+a{
+    text-decoration:none;
+    font-size: 20px;
+    color:white;
+
+    
+}
+.unit4{
+   
+    
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+
+
+}
+.unit5{
+    padding: 20px;
+   text-align: center;
+   display: inline-block;
+    
+ 
+
+
+
+}
+img{
+    width:100%;
+    height:150px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.card{
+    width: 20%;
+    border:5px;
+    margin:40px;
+    box-shadow: 2px 2px 10px white;
+    display: inline-block;
+    padding: 50px;
+    float:left;
+    flex-direction: column;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.unit6{
+  
+   
+    text-align: center;
+   
+   padding:15px;
+ 
+    display: inline-block;
+
+
+}
+.card1{
+    width: 20%;
+    border:5px;
+    margin:40px;
+    box-shadow: 2px 2px 10px white;
+    display: inline-block;
+    float:left;
+    padding: 50px;
+    flex-direction: column;
+    
+ 
+    
+}
+.info{
+    background-color: #fff;
+}
+
+.info h2{
+    text-decoration: underline;
+    font-size: 30px;
+    padding: 20px;
+ 
+}
+.info p{
+    font-size: 20px;
+    padding-left:20px;
+}
+.info img{
+    width:300px;
+    height:250px;
+    padding-left:530px;
+    padding-bottom:30px;
+
+
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 3s ease;
+}
+.reveal.active{
+    transform: translatey(0px);
+    opacity: 1;
+}
+.info h3{
+    text-decoration: underline;
+    padding:20px;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card1:hover{
+    transform: scale(1.1);
+}
+.section{
+    color: #1D212B;
+    background: #fff;
+}
+.image1 img{
+    float:right;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+.home{
+     position:absolute;
+     top:40px;
+     left:50px;
+    
+}
+.home:hover{
+    transform: scale(1.1);
+}
+.contact{
+    position:absolute;
+     top:40px;
+     left:150px
+
+}
+.about{
+    position:absolute;
+     top:40px;
+     left:280px;
+}
+
+.logo {
+    float:right;
+    position:absolute;
+    top:8px;
+    left:1350px;
+    
+   
+}
+.logo img{
+    height:80px;
+
+}
+
+
+
+
+
+
+</style>
+<body>
+
+    <h1>Data Structure And Algorithms</h1>
+    <div class="home">
+    <a href="index.html">HOME</a>
+</div>
+
+<div class="logo">
+    <img src="datalogo.gif"width="0.1px"height="2px">
+</div>
+
+    <div class="info">
+        <h2>What is Data Structure</h2>
+        <p>A data structure is not only used for organizing the data. It is also used for processing, retrieving, and storing data. There are different basic and advanced types of data structures that are used in almost every program or software system that has been developed. So we must have good knowledge about data structures. </p>
+        <img src="data1.jpg"width="300px"height="250px">
+        <h2>What is an Algorithm?</h2>
+        <p>A set of finite rules or instructions to be followed in calculations or other problem-solving operations ” Or ” A procedure for solving a mathematical problem in a finite number of steps that frequently involves recursive operations</p>
+        <h3>Linear data structure:</h3>
+            <p>Data structure in which data elements are arranged sequentially or linearly, where each element is attached to its previous and next adjacent elements, is called a linear data structure. 
+            Examples of linear data structures are array, stack, queue, linked list, etc.
+            Static data structure: Static data structure has a fixed memory size. It is easier to access the elements in a static data structure. 
+            An example of this data structure is an array.
+            Dynamic data structure: In dynamic data structure, the size is not fixed. It can be randomly updated during the runtime which may be considered efficient concerning the memory (space) complexity of the code. 
+            Examples of this data structure are queue, stack, etc.
+            Non-linear data structure: Data structures where data elements are not placed sequentially or linearly are called non-linear data structures. In a non-linear data structure, we can’t traverse all the elements in a single run only. 
+            Examples of non-linear data structures are trees and graphs.</p>
+            <div class="image1">
+                <img src="student.png"width="400px"height="200px">
+            </div>
+        <h2>Use of the Algorithms:-</h2>
+        <p>Algorithms play a crucial role in various fields and have many applications. Some of the key areas where algorithms are used include:</p>
+
+         <h3>Computer Science:</h3><p> Algorithms form the basis of computer programming and are used to solve problems ranging from simple sorting and searching to complex tasks such as artificial intelligence and machine learning.</p>
+         <h3>Mathematics:</h3><p>Algorithms are used to solve mathematical problems, such as finding the optimal solution to a system of linear equations or finding the shortest path in a graph.</p>
+          <h3>Operations Research:</h3><p> Algorithms are used to optimize and make decisions in fields such as transportation, logistics, and resource allocation.</p>
+         <h3>Artificial Intelligence:</h3><p> Algorithms are the foundation of artificial intelligence and machine learning, and are used to develop intelligent systems that can perform tasks such as image recognition, natural language processing, and decision-making.</p>
+         <h3>Data Science:</h3><p> Algorithms are used to analyze, process, and extract insights from large amounts of data in fields such as marketing, finance, and healthcare.  </p>
+         <br><br><br><br>
+         <section>
+            <div class="reveal active">
+            <img src="alg.gif"width="50%"height="300px">
+            </div>
+            </section>
+      </div>
+      <br><br><br><br>
+     
+    <section>
+        
+        <div class="reveal active">
+    <div class="card">
+    <div class="unit1">
+        <img src="abc.jpg">
+        <br>
+    
+    <a href="introduction.html">introduction</a>
+    </div>
+    </div>
+
+    <div class="card">
+        <div class="unit2">
+            <img src="sam12.gif">
+            <br>
+        <a href="searching and sorting.html">Searching and Sorting</a>
+       </div>
+    </div>
+    <div class="card">
+        <div class="unit3">
+            <img src="er.gif">
+            <br>
+        
+        <a href="stack and queue.html">Stack & Queue</a>
+       </div></div>
+       <br>
+       <div class="main2">
+       <div class="card1">
+        <div class="unit4">
+            <img src="t.gif">
+            <br>
+    
+        <a href="tress.html">Trees</a></div>
+        </div>
+        <br>
+        <div class="card1">
+        <div class="unit5">
+            <img src="ety.gif">
+        <a href="graph.html">Graph and Symbol Table</a></div>
+        </div>
+        <br>
+        <div class="card1">
+        <div class="unit6">
+            <img src="cat.gif">
+        <a href="hashing.html">Hashing and File Organization</a>
+    </div>
+        </div>
+        
+        </div>
+        </div>
+    </section>
+   
+
+        
+    
+        <script type="text/javascript">
+            window.addEventListener('scroll', reveal);
+    
+            function reveal() {
+                var reveals = document.querySelectorAll('.reveal');
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowheight = window.innerHeight;
+                    var revealtop = reveals[i].getBoundingClientRect().top;
+                    var revealpoint = 150;
+                    if (revealtop < windowheight - revealpoint) {
+                        reveals[i].classList.add('active');
+                    }
+                    else {
+                        reveals[i].classList.remove('active');
+                    }
+                }
+    
+            }
+        </script>
+    
+      
+
+       
+    
+    
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>searching and sorting</title>
+</head>
+<style>
+    html{
+        background:white;
+    
+    }
+    h1{
+        text-align: center;
+        padding: 30px;
+        padding-top:3 0px;
+        color:white;
+        background-color:black ;
+        font-size:30px;
+    
+    
+    }
+    p{
+        font-size: 20px;
+
+    }
+    h2{
+        font-size: 30px;
+        text-decoration: underline;
+        text-align: center;
+    }
+    img{
+    
+        padding-left:390px;
+        padding-top:30px;
+
+
+    }
+    .reveal{
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 3s ease;
+    }
+    .reveal.active{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+    li{
+        font-size: 20px;
+        padding: 20px;
+    }
+</style>
+<body>
+    <h1>Searching and sorting</h1>
+    <h2>What is Searching Algorithm?</h2>
+    <p>Searching Algorithms are designed to check for an element or retrieve an element from any data structure where it is stored.</p>
+    <p>Based on the type of search operation, these algorithms are generally classified into two categories:</p>
+    <h2>Linear Search</h2>
+    <p>Sequential Search: In this, the list or array is traversed sequentially and every element is checked. For example: Linear Search.</p>
+    <section>
+        <div class="reveal active">
+        <img src="l.gif"width="50%"height="300px">
+        </div>
+        </section>
+    <h2>Binary Search</h2>
+    <p>Interval Search: These algorithms are specifically designed for searching in sorted data-structures. These type of searching algorithms are much more efficient than Linear Search as they repeatedly target the center of the search structure and divide the search space in half. For Example: Binary Search.</p>
+    <section>
+        <div class="reveal active">
+        <img src="b.gif"width="50%"height="300px">
+        </div>
+        </section>
+        <h2>What is Sorting?</h2>
+          <p>  A Sorting Algorithm is used to rearrange a given array or list of elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements in the respective data structure.</p>
+        <ol>
+            <li>
+                BUBBLE SORT
+            </li>
+            <li>MERGE SORT</li>
+            <li>INSERTION SORT</li>
+            <li>QUICK SORT</li>
+        </ol>
+        <h2>BUBBLE SORT</h2>
+        <p>Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.</p>
+        <section>
+            <div class="reveal active">
+            <img src="bubble.gif"width="50%"height="300px">
+            </div>
+            </section>
+        <h2>MERGE SORT</h2>
+        <p>Merge sort is defined as a sorting algorithm that works by dividing an array into smaller subarrays, sorting each subarray, and then merging the sorted subarrays back together to form the final sorted array.</p>
+        <section>
+            <div class="reveal active">
+            <img src="merge.gif"width="50%"height="300px">
+            </div>
+            </section>
+        <h2>INSERTION SORT</h2>
+        <p>Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.</p>
+        <section>
+            <div class="reveal active">
+            <img src="insertion.gif"width="50%"height="300px">
+            </div>
+            </section>
+        <h2>QUICK SORT</h2>
+        <p>QuickSort is a sorting algorithm based on the Divide and Conquer algorithm that picks an element as a pivot and partitions the given array around the picked pivot by placing the pivot in its correct position in the sorted array.</p>
+        <section>
+            <div class="reveal active">
+            <img src="quicksort.gif"width="50%"height="300px">
+            </div>
+            </section>
+            <script type="text/javascript">
+                window.addEventListener('scroll', reveal);
+            
+                function reveal() {
+                    var reveals = document.querySelectorAll('.reveal');
+                    for (var i = 0; i < reveals.length; i++) {
+                        var windowheight = window.innerHeight;
+                        var revealtop = reveals[i].getBoundingClientRect().top;
+                        var revealpoint = 150;
+                        if (revealtop < windowheight - revealpoint) {
+                            reveals[i].classList.add('active');
+                        }
+                        else {
+                            reveals[i].classList.remove('active');
+                        }
+                    }
+            
+                }
+            </script>
+        
+</body>
+</html>

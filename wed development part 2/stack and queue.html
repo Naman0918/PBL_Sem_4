@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stack and Queue</title>
+</head>
+
+<style>
+    html{
+        background:white;
+    
+    }
+    h1{
+        text-align: center;
+        padding: 30px;
+        padding-top:3 0px;
+        color:white;
+        background-color:black ;
+        font-size:30px;
+    
+    
+    }
+    h2{
+    
+        font-size:25px;
+        text-decoration: underline;
+        text-align: center;
+
+
+    }
+    p{
+        font-size: 20px;
+    }
+    .image{
+        padding: 40px;
+        padding-left:1020px;
+        position: absolute;
+        top: 350px;
+        
+    }
+    ol li a{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+    ol li{
+        font-size: 20px;
+    }
+    h3{
+        text-decoration:underline;
+    }
+</style>
+<body>
+    <h1>stack and queue</h1>
+    <h2>what do you mean by stack?</h2>
+    <p>A stack is a linear data structure in which the insertion of a new element and removal of an existing element takes place at the same end represented as the top of the stack.</p>
+    <p>To implement the stack, it is required to maintain the pointer to the top of the stack, which is the last element to be inserted because we can access the elements only on the top of the stack.</p>
+    <h2>what do you mean by last in first out(LIFO):</h2>
+    <p>This strategy states that the element that is inserted last will come out first. You can take a pile of plates kept on top of each other as a real-life example. The plate which we put last is on the top and since we remove the plate that is at the top, we can say that the plate that was put last comes out first.</p>
+     <img src="stack.gif"width="400px"height="200px">
+     <h2>Basic Operations on Stack</h2>
+     <p>In order to make manipulations in a stack, there are certain operations provided to us.
+        <ul>
+
+     <li>push() to insert an element into the stack</li>
+     <li>pop() to remove an element from the stack</li>
+    <li>top() Returns the top element of the stack.</li>
+    <li>isEmpty() returns true if stack is empty else false.</li>
+    <li>size() returns the size of stack.</li>
+     </ul>
+     <img src="er.gif"width="400x"height="200px">
+     <div class="image">
+     <img src="str.gif"width="400x"height="400px">
+     <hr>
+    
+</div>
+<p>Some other Implementation of Stack:</p>
+<ol>
+
+   <li><a href="queue as stack.html">Queue using Stacks</a></li>
+   <li><a href="#">Queue using Stacks</a></li>
+   <li><a href="#">Queue using Stacks</a></li>
+   <li><a href="#">Queue using Stacks</a></li>
+   
+   
+</ol>
+    <h2>Postfix</h2>
+    <p>An expression is called the postfix expression if the operator appears in the expression after the operands. Simply of the form (operand1 operand2 operator). 
+        Example : AB+CD-* (Infix : (A+B) * (C-D) )</p>
+        <h2>Prefix</h2>
+    <p>An expression is called the prefix expression if the operator appears in the expression before the operands. Simply of the form (operator operand1 operand2). 
+            Example : *+AB-CD (Infix : (A+B) * (C-D) )</p>
+            <h2>Infix</h2>
+            <p>Infix: An expression is called the Infix expression if the operator appears in between the operands in the expression. Simply of the form (operand1 operator operand2). 
+                Example : (A+B) * (C-D)</p>
+    <h2>Convertions</h2>
+    <h3>Infix to postfix</h3>
+    <ol>
+        <li>raverse the infix expression and check if given character is an operator or an operand.</li>
+         <li>  If it is an operand, then push it into operand stack.</li>
+          <li>If it is an operator, then check if priority of current operator is greater than or less than or equal to the operator at top of the stack.</li>
+          <li> If priority is greater, then push operator into operator stack.</li>
+          <li> pop two operands from operand stack, pop operator from operator stack and push string operator + operand 2 + operand 1 into operand stack. Keep popping from both stacks and pushing result into operand stack until priority of current operator is less than or equal to operator at top of the operator stack.</li>
+           <li> If current character is ‘(‘, then push it into operator stack.</li>
+            <li>If current character is ‘)’, then check if top of operator stack is opening bracket or not.</li>
+            <li> If not pop two operands from operand stack, pop operator from operator stack and push string operator + operand 2 + operand 1 into operand stack.</li>
+            <li> Keep popping from both stacks and pushing result into operand stack until top of operator stack is an opening bracket.</li>
+            <li>The final prefix expression is present at top of operand stack.</li>
+    </ol>
+    <h3>Infix to prefix</h3>
+    <ol>
+        <li>Step 1: Reverse the infix expression. Note while reversing each ‘(‘ will become ‘)’ and each ‘)’ becomes ‘(‘.</li>
+          <li> Step 2: Convert the reversed infix expression to “nearly” postfix expression.</li>
+            While converting to postfix expression, instead of using pop operation to pop operators with greater than or equal precedence, here we will only pop the operators from stack that have greater precedence.
+           <li> Step 3: Reverse the postfix expression.</li>
+    </ol>
+
+</body>
+</html>
